@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgound_movie"
+    tools:context=".Activity.ScheduleActivity">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias=".03"
+        app:layout_constraintVertical_bias=".03"
+        />
+    <TextView
+        android:id="@+id/txt_booking_ticket1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking movie ticket"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".05"
+        app:layout_constraintHorizontal_bias=".5"
+        />
+    <TextView
+        android:id="@+id/txt_choose_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Date"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/txt_booking_ticket1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias=".1"
+        app:layout_constraintVertical_bias=".01"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/choose_date_rec"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_choose_date"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/choose_brand_ver"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_date_rec"
+        app:layout_constraintVertical_bias=".01"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_next"
+        app:layout_constraintTop_toBottomOf="@+id/choose_brand_ver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btn_buy_ticket_brand"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

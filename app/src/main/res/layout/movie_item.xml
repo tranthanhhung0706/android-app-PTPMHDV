@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="101dp"
+    android:layout_height="176dp"
+    android:id="@+id/cardviewitem"
+    >
+
+    <LinearLayout
+        android:background="@drawable/backgound_movie"
+        android:layout_width="101dp"
+        android:layout_height="176dp"
+        android:orientation="vertical">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imhHinh"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/movie1" />
+        <TextView
+            android:layout_gravity="center"
+            android:id="@id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
